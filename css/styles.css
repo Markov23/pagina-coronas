@@ -1,43 +1,111 @@
-div.f-grid {
-    display: flex;
-    flex-flow: row wrap;
+/* All */
+
+body {
+    background-color: #eeeeee;
 }
 
-div.f-grid-cell {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    padding: 0;
+a:hover {
+    text-decoration: none;
+    color: black;
 }
 
-div.f-sidebar {
-    padding-bottom: 3% !important;
+
+/*Navbar*/
+
+nav.nav-color {
+    background-color: #B6001C;
 }
+
+.text-color {
+    color: black;
+}
+
+li.nav-item {
+    display: inline-block;
+}
+
+li.nav-item a {
+    color: #ffffff;
+}
+
+li.nav-item2 {
+    display: inline-block;
+}
+
+li.nav-item2 a {
+    color: #030303;
+}
+
+div.dropdown-menu a {
+    color: #030303;
+}
+
+nav.bottom-header {
+    background-color: #ffffff;
+}
+
+div.collapse {
+    text-align: center !important;
+    align-items: center !important;
+}
+
+nav.chiquishead {
+    background-color: #E8E8E8;
+}
+
+nav.starter-header {
+    background-color: #B6001C !important;
+}
+
+div.barsearch {
+    width: 300px;
+}
+
+div.searchbar {
+    width: 25%;
+}
+
+ul.navOp {
+    overflow: hidden;
+}
+
+
+/* Cards */
 
 div.borad {
     border-radius: 8px;
     padding: 5px;
     font-size: 12px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-img.borad-left {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+div.popt {
+    margin-top: 1.5em;
 }
 
-p.borad-right {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+div.popt-content {
+    position: static;
+    display: block;
+    max-width: 600px;
+    padding: 15px 15px 15px 60px;
+    overflow: hidden;
+    text-align: left;
+    font-size: medium;
 }
 
-div.cirCard-Des {
-    border-image: round;
-    text-align: center;
-    font-weight: bolder;
+p.textIconUpper {
+    padding: 0.5rem;
+    color: black;
+    font-weight: bold;
 }
 
-img.img-card {
-    width: fit-content;
+img.popt-img {
+    padding-right: 10px;
 }
+
+
+/*section2*/
 
 p.Catop {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -51,6 +119,20 @@ p.Catop {
     margin-top: 1rem;
 }
 
+div.cont-card {
+    margin: 0.5rem 0rem;
+    height: 250px;
+    width: 200px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+img.img-card {
+    padding-top: 5px;
+    padding-left: 25px;
+    height: 8rem;
+    width: 10rem;
+}
+
 div.scard {
     background-color: white;
     height: 130px;
@@ -61,10 +143,14 @@ div.scard {
 
 div.catop-layout {
     text-align: center;
-    padding-top: 20px;
+    font-size: medium;
+    padding: 0;
 }
 
-p.catop-content {}
+p.catop-content {
+    padding-top: 5px;
+    margin-top: 0;
+}
 
 span.smlink {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -76,47 +162,35 @@ span.smlink {
     text-align: left;
 }
 
-div.banner {
-    height: 100%;
-    margin: 0;
+img.imgIcon {
+    max-width: 20%;
+    padding-top: 7px;
+    padding-right: 5px;
+}
+
+a.cardlink {
+    color: black;
+}
+
+
+/* Banners */
+
+div.banner1 {
+    background-image: url("/img/Group84.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 20.75vw;
     width: 100%;
-    margin-bottom: 2rem;
+    overflow: hidden;
 }
 
-div.banner {
-    float: left;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
-    min-height: 1px;
-}
-
-div.imgBanner {
-    width: 75%;
-    float: left;
-}
-
-p.ban-text {
-    background-color: #587D4A;
-    font-size: 1.5em;
-    width: auto;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: lighter;
-}
-
-div.popt {
-    margin-top: 1.5em;
-}
-
-div.popt-content {
-    text-align: center;
-}
-
-div.searchbar {
-    width: 25%;
-}
-
-ul.navOp {
+div.banner2 {
+    background-image: url("/img/Group108.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 20.75vw;
+    width: 100%;
     overflow: hidden;
 }
