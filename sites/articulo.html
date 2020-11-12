@@ -17,27 +17,12 @@
             background-color: #B6001C !important;
         }
 
-        /*ul.navbar-center {
-            position: absolute;
-            left: 50%;
-            height: 50%;
-            transform: translatex(-50%);
-        }*/
-
         li.nav-item {
             display: inline-block;
         }
 
         li.nav-item a {
             color: #ffffff;
-        }
-
-        li.nav-item2 {
-            display: inline-block;
-        }
-
-        li.nav-item2 a {
-            color: #030303;
         }
 
         div.dropdown-menu a {
@@ -48,40 +33,87 @@
             background-color: #ffffff;
         }
 
-        div.collapse {
-            text-align: center !important;
-            align-items: center !important;
+        button.navbar-toggler {
+            border: #030303 2px solid;
         }
 
-        nav.chiquishead {
+        a.rm-bottom {
+            padding-bottom: 0;
+        }
+
+        li.doble-line {
+            line-height: 1;
+        }
+
+        i.search {
+            color: #030303;
+        }
+
+        button.btn-se {
+            background-color: #f8f9fa !important;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        input.search-bar {
+            width: 30vw !important;
+            margin-right: 0 !important;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        
+        ul.linknav a{
+            color: #030303 !important;
+        }
+
+        nav.chiquishead{
             background-color: #E8E8E8;
         }
 
-        div.pino {
-            padding-top: 5%;
-            padding-bottom: 5%;
+        nav.chiquishead a{
+            color: #030303;
         }
 
-        div.tarjeta {
-            padding-top: 5%;
-            padding-bottom: 5%;
+        div.row{
+            padding-top: 3%;
+            padding-bottom: 3%;
         }
 
-        h6.pedido {
-            color: #93C16C;
+        a.link{
+            color: #704638;
         }
 
-        button.btn-primary {
-            background-color: #704638;
+        div.pino{
+            padding-bottom: 10%;
         }
 
-        button.btn-secondary {
+        div.tarjeta{
+            padding-bottom: 14%;
+        }
+
+        button.btn{
+            background-color:#704638;
+            color: #ffffff;
+        }
+
+        button.btn-secondary{
             background-color: #B7A39B;
         }
 
-        div.tarjetitas {
-            padding-top: 8%;
-            padding-bottom: 8%;
+        button.btn-g{
+            background-color: #B7A39B;
+        }
+
+        nav.footer-top{
+            background-color:#E8E8E8;
+        }
+        
+        nav.footer-top a{
+            color:#030303
+        }
+
+        nav.footer-bottom{
+            background-color: #B6001C;
         }
     </style>
     <!-- font awesome -->
@@ -91,69 +123,69 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg starter-header">
-
-            <div class="container">
-
-                <nav class="navbar navbar-light ">
-                    <a class="navbar-brand">
-                        <img src="/img/logo.png" width="60" height="50" alt="">
-                    </a>
-                </nav>
-
-                <div class="collapse navbar-collapse" id="navbarsearch">
-                    <ul class="navbar-nav mr-auto navbar-center">
+            <div class="container-fluid mx-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <img class="card-img-top" src="/img/logo.png" alt="Card image cap" width="80">
+                        </li>
+                        <li class="nav-item doble-line">
+                            <a class="nav-link rm-bottom"><i class="fas fa-map-marker-alt"></i> Enviar a John</a>
+                            <a href="#">C.P. 89823</a>
+                        </li>
                         <li class="nav-item">
                             <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                    aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Busca marcas, productos y más..."
+                                    aria-label="Search" />
+                                <button class="btn btn-se btn-outline-light my-2 my-sm-0" type="submit"><i
+                                        class="fas fa-search search"></i></button>
                             </form>
                         </li>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsearch"
-                            aria-controls="navbarsearch" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 John Doe
                             </a>
-
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
-
                         </li>
-
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Favoritos
+                                Favorites
                             </a>
-
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
-
                         </li>
-
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Mis compras <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mis Compras</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
                     </ul>
                 </div>
-
             </div>
         </nav>
+
+        <!--Segundo navbar-->
         <nav class="navbar navbar-expand-lg bottom-header">
-            <div class="container">
-                <ul class="navbar-nav mr-auto navbar-center">
+            <div class="container-fluid mx-auto" >
+                <ul class="navbar-nav linknav mx-auto text-center">
                     <li class="nav-item2 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -197,7 +229,7 @@
 
         <nav class="navbar navbar-expand-lg chiquishead">
             <div class="container">
-                <ul class="navbar-nav mr-auto navbar-center">
+                <ul class="navbar-nav navli mr-auto navbar-center">
                     <li class="nav-item2 active">
                         <a class="nav-link" href="#">Volver <span class="sr-only">(current)</span></a>
                     </li>
@@ -238,7 +270,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <p></p>
+                
                 <h4>Preguntas y respuestas</h4>
                 <p></p>
                 <h5>Busca lo que quieres saber</h5>
@@ -272,7 +304,7 @@
                 </p>
                 <p></p>
                 <p></p>
-                <a style="color: #704638;">Ver todas las preguntas</a>
+                <a class="link">Ver todas las preguntas</a>
             </div>
             <div class="col">
                 <div class="tarjeta">
@@ -316,9 +348,9 @@
                     <img src="/img/opinion.png" width="350" />
                     <p></p>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-lg">Todas</button>
-                        <button type="button" class="btn btn-lg">Positivas</button>
-                        <button type="button" class="btn btn-lg">Negativas</button>
+                        <button type="button" class="btn btn-g btn-lg">Todas</button>
+                        <button type="button" class="btn btn-g btn-lg">Positivas</button>
+                        <button type="button" class="btn btn-g btn-lg">Negativas</button>
                     </div>
                     <p></p>
                     <img src="/img/estrellas.png" width="100" />
@@ -338,7 +370,7 @@
                     </p>
                     <p></p>
                     <p></p>
-                    <a style="color: #704638;">Ver todas las opiniones</a>
+                    <a class="link">Ver todas las opiniones</a>
                 </div>
             </div>
         </div>
@@ -346,8 +378,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <div class="card" style="width: 200;">
-                            <img class="card-img-top" src="/img/image1.png" alt="Card image cap" width="50">
+                        <div class="card" style="width: 100;">
+                            <img class="card-img-top" src="/img/image1.png" alt="Card image cap" width="30">
                             <div class="card-body">
                                 <h5 class="card-title">$260</h5>
                                 <p class="card-text">Luces Solares Exterior Para Decoración Navideña 24 Metros</p>
@@ -396,23 +428,19 @@
 
     </div>
     <footer>
-        <nav class="navbar navbar-expand-lg bottom-header" style="background-color:#E8E8E8;">
-            <div class="container">
-                <ul class="navbar-nav mr-auto navbar-center">
+        <nav class="navbar navbar-expand-lg footer-top">
+            <div class="container-fluid">
+                <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item2 active">
                         <a class="nav-link" href="#">Inicio de pagina <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg bottom-header" style="background-color:#B6001C;">
+        <nav class="navbar navbar-expand-lg footer-bottom">
             <div class="container">
-                <ul class="navbar-nav mr-auto navbar-center">
-                    <li class="nav-item2 active">
-                        <a class="navbar-brand">
-                            <img src="/img/logo.png" width="60" height="50" alt="">
-                        </a>
-                    </li>
+                <ul class="navbar-nav mx-auto text-center">
+                    <img class="card-img-top" src="/img/logo.png" alt="Card image cap" width="80">
                 </ul>
             </div>
         </nav>
