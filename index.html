@@ -6,191 +6,311 @@
 
     <meta charset="utf-8">
     <title>MercaNav</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4be3e68216.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script>
-        $(this).ready(function() {
-            $(".dropdown-trigger").dropdown();
-        });
-    </script>
 </head>
 
-<body class="grey lighten-3">
-    <nav class="nav-extended red darken-4">
-        <div class="nav-wrapper red darken-4 container">
-            <a href="#" class="brand-logo">
-                <i class="material-icons left">shopping_basket</i>Mercado Navideño
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-color text-white">
+        <div class="container">
+            <a class="navbar-brand text-light" href="#">
+                <i class="material-icons md-48">shopping_basket</i><span> Mercado Navideño</span>
             </a>
-            <!--local_shipping icon
-                home icon
-                card_giftcard icon-->
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#">Crea tu Cuenta</a></li>
-                <li><a href="#">Ingresa</a></li>
-                <li><a href="#"><i class="material-icons right">shopping_cart</i>Mis compras</a></li>
-            </ul>
-            <div id="nav-mobile" class="right hide-on-med-and-down searchbar">
-                <form class="form-field">
-                    <input type="search" placeholder="Buscar marcas, productos y más..." aria-label="Search">
+
+            <div id="nav-mobile" class="nav justify-content-center">
+                <form class="form-inline">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Buscar marcas, productos y más..." aria-label="Search">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="material-icons md-48">search</i></span>
+                        </div>
+                    </div>
+
                 </form>
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link" href="#">Crea tu Cuenta</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Ingresa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Mis compras</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="material-icons right">shopping_cart</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-color">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorias</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="#">Ofertas<span class="sr-only"></span></a></li>
+                    <li><a class="nav-link" href="#">Promociones<span class="sr-only"></span></a></li>
+                    <li><a class="nav-link" href="#">Los más vendidos <span class="sr-only"></span></a></li>
+                    <li><a class="nav-link" href="#">Historial <span class="sr-only"></span></a></li>
+                    <li><a class="nav-link" href="#">Ayuda <span class="sr-only">(current)</span></a></li>
+
+                </ul>
             </div>
         </div>
     </nav>
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#" class="grey-text text-darken-4">Action</a></li>
-        <li><a href="#" class="grey-text text-darken-4">Another action</a></li>
-        <li><a href="#" class="grey-text text-darken-4">Something else here</a></li>
-    </ul>
-    <nav class="navbar white">
-        <div class="container nav-content">
-            <ul class="left navOp">
-                <li>
-                    <a class="dropdown-trigger grey-text text-darken-4" href="#" data-target="dropdown1">Categorias
-                        <i class="material-icons right grey-text text-darken-4">arrow_drop_down</i>
-                    </a>
-                </li>
-            </ul>
-            <ul class="left navOp hide-on-med-and-down">
-                <li><a href="#" class="grey-text text-darken-4">Ofertas</a></li>
-                <li><a href="#" class="grey-text text-darken-4">Promociones</a></li>
-                <li><a href="#" class="grey-text text-darken-4">Los mas vendidos</a></li>
-                <li><a href="#" class="grey-text text-darken-4">Historial</a></li>
-                <li><a href="#" class="grey-text text-darken-4">Ayuda</a></li>
-            </ul>
 
-        </div>
-    </nav>
-
+    <section class="header">
+        <div class="banner1"></div>
+    </section>
 
     <section>
         <div class="container">
-            <div class="card card-content borad popt row">
-                <div class="col s4 m4 popt-content">
+            <div class="borad popt row">
+                <div class="col popt-content">
                     <a href="#">
-                        <img class="left" src="" alt="">
-                        <p>Tarjeta de débito<br><span>Ver más</span></p>
+                        <img class="float-sm-center float-left popt-img" width="70rem" src="img/Iconos/tarjeta.png" alt="tarjeta">
+                        <p class=" textIconUpper float-center"> Tarjeta de débito<br><span style="color: #704638; font-weight: normal;">Ver más</span></p>
                     </a>
                 </div>
-                <div class="col s4 m4 popt-content">
+                <div class="col popt-content">
+                    <span>
                     <a href="#">
-                        <img class="left" src="" alt="">
-                        <p>Transferencia<br><span>Ver más</span></p>
+                        <img class="float-sm-center float-left popt-img" width="70rem" src="img/Iconos/transferencia.png" alt="transferencia">
+                        <p class=" textIconUpper float-center">Transferencia<br><span style="color: #704638; font-weight: normal;">Ver más</span></p>
                     </a>
+                    </span>
                 </div>
-                <div class="col s4 m4 popt-content">
-                    <a href="#"><img class="left" src="" alt="">
-                        <p>Paypal<br><span>Ver más</span></p>
+                <div class="col popt-content">
+                    <a href="#">
+                        <img class="float-sm-center float-left popt-img" width="70rem" src="img/Iconos/paypal.png" alt="paypal">
+                        <p class=" textIconUpper float-center">Paypal<br><span style="color: #704638; font-weight: normal;">Ver más</span></p>
                     </a>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container">
-            <p class="Catop">Ofertas <span class="smlink"><a href="#">Ver todas</a></span></p>
-            <div class="row">
-                <div class="col s12 m4 l3">
-                    <div class="card small hoverable borad">
-                        <div class="card-image">
-                            <img class="img-card" src="img/pino.png">
-                        </div>
-                        <div class="card-content">
-                            <p>$1409.00</p>
-                            <p><strong>$900.00</strong> <span class="green-text"> 22% OFF</span></p>
-                            <p>Arbol Pino Navidad Artificial Frondoso Verde Ixtla 2.20m</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 l3">
-                    <div class="card small hoverable borad">
-                        <div class="card-image">
-                            <img class="img-card" src="img/pino.png">
-                        </div>
-                        <div class="card-content">
-                            <p>$1409.00</p>
-                            <p><strong>$900.00</strong> <span class="green-text"> 22% OFF</span></p>
-                            <p>Arbol Pino Navidad Artificial Frondoso Verde Ixtla 2.20m</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 l3">
-                    <div class="card small hoverable borad">
-                        <div class="card-image">
-                            <img class="img-card" src="img/pino.png">
-                        </div>
-                        <div class="card-content">
-                            <p>$1409.00</p>
-                            <p><strong>$900.00</strong> <span class="green-text"> 22% OFF</span></p>
-                            <p>Arbol Pino Navidad Artificial Frondoso Verde Ixtla 2.20m</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 l3">
-                    <div class="card small hoverable borad">
-                        <div class="card-image">
-                            <img class="img-card" src="img/pino.png">
-                        </div>
-                        <div class="card-content">
-                            <p>$1409.00</p>
-                            <p><strong>$900.00</strong> <span class="green-text"> 22% OFF</span></p>
-                            <p>Arbol Pino Navidad Artificial Frondoso Verde Ixtla 2.20m</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container">
-        <div class="banner ">
-            <div class="imgBanner"><img class="responsive-img borad-left" src="img/11745.jpg" alt="banner2"> </div>
-            <p class="white-text ban-text borad-right">Todo lo que buscas para esta navidad, en un solo lugar.</p>
+    <section>
+        <div class="container">
+            <p class="Catop">Ofertas <span class="smlink"><a href="sites/ofertas.html">Ver todas</a></span></p>
+            <div class="row">
+                <div class="col">
+                    <a class="cardlink" href="sites/articulo.html">
+                        <div class="cont-card borad">
+                            <img class="card-img-top img-card" src="img/pino.png" alt="producto1">
+                            <div class="card-body">
+                                <p>
+                                    <span class="text-muted" style="text-decoration: line-through;">$1409.00</span><br>
+                                    <strong>$900.00</strong><span class="text-success"> 22% OFF</span>
+                                    <br>Arbol Pino Navidad Artificial Frondoso Verde Ixtla 2.20m</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardlink" href="sites/articulo.html">
+                        <div class="cont-card borad">
+                            <img class="card-img-top img-card" src="img/esfera.png" alt="producto1">
+                            <div class="card-body">
+                                <p>
+                                    <span class="text-muted" style="text-decoration: line-through;">$117.00</span><br>
+                                    <strong>$105.30</strong><span class="text-success"> 10% OFF</span>
+                                    <br>Esferas Navideñas Grandes De 14 Cm De Alto Color Verde</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardlink" href="sites/articulo.html">
+                        <div class="cont-card borad">
+                            <img class="card-img-top img-card" src="img/muñeco.png" alt="producto1">
+                            <div class="card-body">
+                                <p>
+                                    <span class="text-muted" style="text-decoration: line-through;">$271.00</span><br>
+                                    <strong>$159.22</strong><span class="text-success"> 41% OFF</span>
+                                    <br>Muñeco De Muñeco De Nieve De Decoración Navideña</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardlink" href="sites/articulo.html">
+                        <div class="cont-card borad">
+                            <img class="card-img-top img-card" src="img/image1.png" alt="producto1">
+                            <div class="card-body">
+                                <p>
+                                    <span class="text-muted" style="text-decoration: line-through;">$351.56</span><br>
+                                    <strong>$259.43</strong><span class="text-success"> 26% OFF</span>
+                                    <br>Luces Solares Exterior Para Decoración Navideña 24 Metros</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="header2 container">
+        <a href="#">
+            <div class="banner2"></div>
+        </a>
+    </section>
 
     <section>
         <div class="container">
             <p class="Catop">Lo más vendido <span class="smlink"><a href="#">Ver todas</a></span></p>
             <div class="row">
-                <div class="col s12 m4 l3">
-                    <div class="card small hoverable borad">
-                        <div class="card-image">
-                            <img width="180px" src="img/pino.png">
+                <div class="col">
+                    <a class="cardlink" href="sites/articulo.html">
+                        <div class="cont-card borad">
+                            <img class="card-img-top img-card" src="img/pino.png" alt="producto1">
+                            <div class="card-body">
+                                <p>
+                                    <span class="text-muted" style="text-decoration: line-through;">$1409.00</span><br>
+                                    <strong>$900.00</strong><span class="text-success"> 22% OFF</span>
+                                    <br>Arbol Pino Navidad Artificial Frondoso Verde Ixtla 2.20m</p>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <p>$1409.00</p>
-                            <p><strong>$900.00</strong> <span class="green-text"> 22% OFF</span></p>
-                            <p>Arbol Pino Navidad Artificial Frondoso Verde Ixtla 2.20m</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col s12 m4 l3">
-                    <div class="card small hoverable borad">
-                        <div class="card-image">
-                            <img width="180px" src="img/pino.png">
+                <div class="col">
+                    <a class="cardlink" href="sites/articulo.html">
+                        <div class="cont-card borad">
+                            <img class="card-img-top img-card" src="img/image2.png" alt="producto1">
+                            <div class="card-body">
+                                <p>
+                                    <span class="text-muted" style="text-decoration: line-through;">$999.00</span><br>
+                                    <strong>$900.00</strong><span class="text-success"> 10% OFF</span>
+                                    <br>Corona Navideña Natural Grande Adorno Puerta Pared Navidad</p>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <p>$1409.00</p>
-                            <p><strong>$900.00</strong> <span class="green-text"> 22% OFF</span></p>
-                            <p>Arbol Pino Navidad Artificial Frondoso Verde Ixtla 2.20m</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
-            </div>
+                <div class="col">
+                    <a class="cardlink" href="sites/articulo.html">
+                        <div class="cont-card borad">
+                            <img class="card-img-top img-card" src="img/image3.png" alt="producto1">
+                            <div class="card-body">
+                                <p>
+                                    <br>
+                                    <strong>$1599.00</strong>
+                                    <br>Torre De Regalos Navideño Multicolor 122 X 22 X 39 CM</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardlink" href="sites/articulo.html">
+                        <div class="cont-card borad">
+                            <img class="card-img-top img-card" src="img/image5.png" alt="producto1">
+                            <div class="card-body">
+                                <p>
+                                    <br>
+                                    <strong>$699.00</strong>
+                                    <br>Luces Solares Exterior Para Decoración Navideña 24 Metros</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
             <p class="Catop">Categorias populares</p>
             <div class="row">
-                <div class="col s12 m4 l3">
-                    <div class="scard hoverable borad">
-                        <div class="catop-layout">
-                            <img width="" src="#">
-                            <p class="catop-content">Árboles artificiales</p>
+                <div class="col">
+                    <a class="cardlink" href="#">
+                        <div class="scard borad">
+                            <div class="catop-layout">
+                                <img style="padding-top: 20px;" width="40px" src="img/Iconos/arbolesArtificiales.png">
+                                <p class="catop-content">Árboles artificiales</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardlink" href="#">
+                        <div class="scard borad">
+                            <div class="catop-layout">
+                                <img style="padding-top: 20px;" width="40px" src="img/Iconos/seriesDeLuces.png">
+                                <p class="catop-content">Series de luces</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardlink" href="#">
+                        <div class="scard borad">
+                            <div class="catop-layout">
+                                <img style="padding-top: 20px;" width="40px" src="img/Iconos/esferas.png">
+                                <p class="catop-content">Esferas</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardlink" href="#">
+                        <div class="scard borad">
+                            <div class="catop-layout">
+                                <img style="padding-top: 20px;" width="40px" src="img/Iconos/villasYNacimientos.png">
+                                <p class="catop-content">Villas y nacimientos</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a class="cardlink" href="#">
+                        <div class="scard borad">
+                            <div class="catop-layout">
+                                <img style="padding-top: 20px;" width="40px" src="img/Iconos/colgantes.png">
+                                <p class="catop-content">Colgantes</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardlink" href="#">
+                        <div class="scard borad">
+                            <div class="catop-layout">
+                                <img style="padding-top: 20px;" width="40px" src="img/Iconos/pinturaEnAerosol.png">
+                                <p class="catop-content">Pinturas en aerosol</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardlink" href="#">
+                        <div class="scard borad">
+                            <div class="catop-layout">
+                                <img style="padding-top: 20px;" width="40px" src="img/Iconos/botasYGorros.png">
+                                <p class="catop-content">Botas y gorros</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardlink" href="#">
+                        <div class="scard borad">
+                            <div class="catop-layout">
+                                <img style="padding-top: 20px;" width="40px" src="img/Iconos/velas.png">
+                                <p class="catop-content">Velas</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
